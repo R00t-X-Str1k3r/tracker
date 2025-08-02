@@ -81,7 +81,7 @@ export const generateRecommendation = async (
   };
 
   const prompt = `
-    You are Zenith, a friendly and encouraging AI productivity coach. 
+    You are Chiru, a friendly and encouraging AI productivity coach. 
     A user is tracking their progress on subjects, habits, videos, and to-do lists. 
     Based on the following data, provide a short, motivational summary of their recent activity (in about 2-3 sentences) and then give one specific, actionable piece of advice to help them stay on track or improve.
     Focus on any overdue tasks if they exist.

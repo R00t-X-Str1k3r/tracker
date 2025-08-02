@@ -1,5 +1,5 @@
 {
-  "name": "zenith-progress-tracker-webapp",
+  "name": "chiru-progress-tracker-webapp",
   "version": "1.0.0",
   "description": "A web-based progress tracker that saves data to your browser.",
   "main": "index.html",

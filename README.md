@@ -1,9 +1,9 @@
 
-# Zenith Progress Tracker (Web App)
+# Chiru (Web App)
 
-Welcome to Zenith, your personal dashboard for tracking subjects, habits, and goals. This is a modern web application that runs entirely in your browser.
+Welcome to Chiru, your personal dashboard for tracking subjects, habits, and goals. This is a modern web application that runs entirely in your browser.
 
-![Zenith App Screenshot](https://storage.googleapis.com/agent-tools-dev/screenshots/zenith-tracker.png)
+![Chiru App Screenshot](https://storage.googleapis.com/agent-tools-dev/screenshots/zenith-tracker.png)
 
 ## Features
 
@@ -39,7 +39,7 @@ Once the installation is complete, you can start the application by running:
 ```bash
 npm start
 ```
-This will automatically open the Zenith Progress Tracker in your default web browser at **`http://localhost:9000`**.
+This will automatically open the Chiru in your default web browser at **`http://localhost:9000`**.
 
 ## Configuring AI Features
 
@@ -52,7 +52,7 @@ The AI Assistant and Note Rewriter features require a Google Gemini API key.
     -   Copy the generated key to your clipboard.
 
 2.  **Add the Key to the App:**
-    -   Open the Zenith application in your browser.
+    -   Open the Chiru application in your browser.
     -   Navigate to the **Settings** page.
     -   Select the **"API Key"** section.
     -   Paste your Gemini API key into the input field and click **"Save Key"**.

@@ -6,6 +6,9 @@ import AiAssistant from './components/AiAssistant';
 import SettingsPage from './components/SettingsPage';
 import SubjectNotesView from './components/SubjectNotesView';
 import TodoView from './components/TodoView';
+import SubjectView from './components/SubjectView';
+import HabitView from './components/HabitView';
+import VideoView from './components/VideoView';
 
 const App: React.FC = () => {
   // Load data from localStorage with defaults
@@ -64,6 +67,28 @@ const App: React.FC = () => {
 
   const renderContent = () => {
     switch (activeMode) {
+      case TrackingMode.Subject:
+        return (
+          <SubjectView
+            subjects={appData.subjects}
+            setSubjects={setSubjects}
+            apiKey={appData.apiKey}
+          />
+        );
+      case TrackingMode.Habit:
+        return (
+          <HabitView
+            habits={appData.habits}
+            setHabits={setHabits}
+          />
+        );
+      case TrackingMode.Video:
+        return (
+          <VideoView
+            videos={appData.videos}
+            setVideos={setVideos}
+          />
+        );
       case TrackingMode.Settings:
         return (
           <SettingsPage
@@ -91,12 +116,11 @@ const App: React.FC = () => {
         );
       default:
         return (
-          <div className="bg-card rounded-lg shadow-lg p-8 border border-card-border text-center">
-            <h2 className="text-2xl font-bold text-card-text mb-4">Coming Soon</h2>
-            <p className="text-subtle-text">
-              {activeMode} tracking is currently under development.
-            </p>
-          </div>
+          <TodoView
+            todos={appData.todos}
+            setTodos={setTodos}
+            isGlassy={isGlassy}
+          />
         );
     }
   };
@@ -109,7 +133,7 @@ const App: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
               <h1 className="text-3xl font-bold text-main-text">
-                Zenith Progress Tracker
+                Chiru
               </h1>
               <p className="text-subtle-text mt-1">
                 Welcome back, {appData.profile.name}!

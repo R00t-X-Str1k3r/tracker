@@ -45,7 +45,7 @@ const AiAssistant: React.FC<AiAssistantProps> = ({ subjects, habits, videos, tod
         {isLoading && (
           <div className="flex flex-col items-center justify-center h-48">
              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-             <p className="mt-4 text-subtle-text">Zenith is thinking...</p>
+             <p className="mt-4 text-subtle-text">Chiru is thinking...</p>
           </div>
         )}
         {!isLoading && recommendation && (
