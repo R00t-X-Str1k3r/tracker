@@ -1,0 +1,17 @@
+
+{
+  "name": "zenith-progress-tracker-webapp",
+  "version": "1.0.0",
+  "description": "A web-based progress tracker that saves data to your browser.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=9000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Chiru",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
